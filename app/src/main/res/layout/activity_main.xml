@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/buna"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/but1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/alins_guide_top" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/but2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/location_icon"
+                />
+
+            <Button
+                android:id="@+id/chat_but"
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/sendmessage_logo"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/location_but"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/location"/>
+
+            <Button
+                android:id="@+id/call_but"
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/call_icon"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_above="@id/buna"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/solo_travel1"/>
+    <Button
+        android:id="@+id/but1"
+        android:layout_alignParentBottom="true"
+        android:text="ready for adventure!"
+        android:textColor="#FFFFFF"
+        android:background="#00796B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/but1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="74dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/next_icon2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="255dp"
+        android:layout_toStartOf="@+id/button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</RelativeLayout>

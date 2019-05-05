@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Main2Activity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/alins_guide_top"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"/>
+    <ImageView
+        android:id="@+id/poza"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/solo_travel2"/>
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_above="@+id/poza"
+        android:src="@drawable/solo_travel3"
+        android:id="@+id/image" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/image"
+        android:layout_marginBottom="27dp"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:background="@drawable/about" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/button3"
+        android:text="About us"
+        android:textColor="#00897B"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/button2"
+        android:layout_alignTop="@+id/image"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="122dp"
+        android:background="@drawable/next_icon2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4"
+        android:layout_centerHorizontal="true"
+        android:text="Show your adventure"
+        android:textColor="#00897B"
+        android:textStyle="bold"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/photo_icon1" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/button3"
+        android:layout_marginEnd="25dp"
+        android:layout_toStartOf="@+id/textView2"
+        android:background="@drawable/home_icon1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_below="@+id/button4"
+        android:text="   Home"
+        android:textColor="#00897B"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView4"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@+id/button3"
+        android:background="@drawable/shop_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+        android:layout_alignStart="@+id/button5"
+        android:layout_marginStart="8dp"
+        android:text="Shop"
+        android:textColor="#00897B"
+        android:textStyle="bold"
+        android:id="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignTop="@+id/button5"
+        android:layout_toEndOf="@+id/button3"
+        android:background="@drawable/beta_icon" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_toStartOf="@+id/button2"
+        android:text="Beta"
+        android:textColor="#00897B"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>
